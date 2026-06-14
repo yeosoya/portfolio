@@ -1,52 +1,113 @@
-// Basic interactions: nav toggle, form handler, reveal on scroll
-document.addEventListener('DOMContentLoaded', function(){
-  const navToggle = document.querySelector('.nav-toggle');
-  const navList = document.querySelector('.nav-list');
-  if(navToggle){
-    navToggle.addEventListener('click', ()=>{
-      const expanded = navToggle.getAttribute('aria-expanded') === 'true';
-      navToggle.setAttribute('aria-expanded', String(!expanded));
-      if(navList.style.display === 'flex') navList.style.display = 'none'; else navList.style.display = 'flex';
+document.addEventListener("DOMContentLoaded", () => {
+  const navToggle = document.querySelector(".nav-toggle");
+  const navList = document.querySelector(".nav-list");
+  const navLinks = document.querySelectorAll(".nav-list a");
+
+  if (navToggle && navList) {
+    navToggle.addEventListener("click", () => {
+      const expanded = navToggle.getAttribute("aria-expanded") === "true";
+      navToggle.setAttribute("aria-expanded", String(!expanded));
+      navToggle.setAttribute("aria-label", expanded ? "Open menu" : "Close menu");
+      navList.classList.toggle("is-open", !expanded);
+    });
+
+    navLinks.forEach((link) => {
+      link.addEventListener("click", () => {
+        navToggle.setAttribute("aria-expanded", "false");
+        navToggle.setAttribute("aria-label", "Open menu");
+        navList.classList.remove("is-open");
+      });
     });
   }
 
-  window.handleSubmit = function(e){
-    e.preventDefault();
-    const name = document.getElementById('name').value.trim();
-    const email = document.getElementById('email').value.trim();
-    if(!name || !email){
-      alert('Please complete the form.');
-      return;
-    }
-    // For static demo: show a friendly message. Replace with real backend or form service.
-    alert('Thanks, ' + name + '! I will reach out to ' + email + '.');
-    e.target.reset();
-  };
+  const cursorFollower = document.querySelector(".cursor-follower");
+  const canUseCustomCursor = window.matchMedia("(pointer: fine)").matches && !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-  // Reveal elements on scroll
-  const observer = new IntersectionObserver((entries)=>{
-    entries.forEach(entry=>{
-      if(entry.isIntersecting){
-        entry.target.classList.add('visible');
-      }
+  if (cursorFollower && canUseCustomCursor) {
+    let mouseX = window.innerWidth / 2;
+    let mouseY = window.innerHeight / 2;
+    let cursorX = mouseX;
+    let cursorY = mouseY;
+
+    const moveCursor = () => {
+      cursorX += (mouseX - cursorX) * 0.2;
+      cursorY += (mouseY - cursorY) * 0.2;
+      cursorFollower.style.transform = `translate3d(${cursorX}px, ${cursorY}px, 0) translate(-50%, -50%)`;
+      requestAnimationFrame(moveCursor);
+    };
+
+    window.addEventListener("mousemove", (event) => {
+      mouseX = event.clientX;
+      mouseY = event.clientY;
+      document.body.classList.add("cursor-active");
     });
-  },{threshold:0.12});
-  document.querySelectorAll('.section, .project-card, .card, .hero-content').forEach(el=>{
-    el.classList.add('reveal');
-    observer.observe(el);
+
+    window.addEventListener("mouseleave", () => {
+      document.body.classList.remove("cursor-active");
+    });
+
+    document.querySelectorAll("a, button").forEach((element) => {
+      element.addEventListener("mouseenter", () => document.body.classList.add("cursor-hover"));
+      element.addEventListener("mouseleave", () => document.body.classList.remove("cursor-hover"));
+    });
+
+    moveCursor();
+  }
+
+  const experienceTabs = document.querySelectorAll("[data-experience-tab]");
+  const experiencePanels = document.querySelectorAll(".timeline-group[role='tabpanel']");
+
+  experienceTabs.forEach((tab) => {
+    tab.addEventListener("click", () => {
+      const targetPanelId = tab.dataset.experienceTab;
+
+      experienceTabs.forEach((item) => {
+        const isActive = item === tab;
+        item.classList.toggle("active", isActive);
+        item.setAttribute("aria-selected", String(isActive));
+      });
+
+      experiencePanels.forEach((panel) => {
+        panel.hidden = panel.id !== targetPanelId;
+      });
+    });
   });
 
-  // Active nav link on scroll
-  const sections = document.querySelectorAll('main section[id]');
-  const navLinks = document.querySelectorAll('.nav-list a');
-  const setActive = () =>{
-    let index = sections.length;
-    while(--index && window.scrollY + 120 < sections[index].offsetTop){}
-    navLinks.forEach(a=>a.classList.remove('active'));
-    const id = sections[index] && sections[index].id;
-    const activeLink = document.querySelector('.nav-list a[href="#'+id+'"]');
-    if(activeLink) activeLink.classList.add('active');
+  const revealObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.14 }
+  );
+
+  document
+    .querySelectorAll(".hero-copy, .hero-panel, .section-heading, .work-item, .profile-stack, .skill-matrix article, .timeline-item, .contact-card")
+    .forEach((element) => {
+      element.classList.add("reveal");
+      revealObserver.observe(element);
+    });
+
+  const sections = document.querySelectorAll("main section[id]");
+
+  const setActiveLink = () => {
+    let currentId = "";
+
+    sections.forEach((section) => {
+      if (window.scrollY >= section.offsetTop - 140) {
+        currentId = section.id;
+      }
+    });
+
+    navLinks.forEach((link) => {
+      link.classList.toggle("active", link.getAttribute("href") === `#${currentId}`);
+    });
   };
-  setActive();
-  window.addEventListener('scroll', setActive);
+
+  setActiveLink();
+  window.addEventListener("scroll", setActiveLink, { passive: true });
 });

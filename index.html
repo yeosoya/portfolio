@@ -3,224 +3,455 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Full Name — Computer Science Student</title>
-    <meta name="description" content="Computer Science (Netcentric Computing) student portfolio — internships in software, web, mobile, networking, and IT." />
+    <title>Nurhanisa Najwa | Netcentric Computing Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of a Computer Science student specialising in systems analysis, business analysis, software QA, UI/UX design, and Front-end development."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&amp;display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/yourkit.js" crossorigin="anonymous" defer></script>
     <script src="script.js" defer></script>
   </head>
   <body>
+    <div class="cursor-follower" aria-hidden="true"></div>
+
     <header class="site-header">
       <div class="container header-inner">
-        <a class="logo" href="#hero">Full Name</a>
-        <nav class="nav" aria-label="Main Navigation">
-          <button class="nav-toggle" aria-controls="primary-navigation" aria-expanded="false" aria-label="Menu">
-            <span class="hamburger"></span>
+        <a class="brand" href="#top" aria-label="Go to homepage">
+          <span class="brand-mark">NN</span>
+          <span>Nurhanisa Najwa</span>
+        </a>
+
+        <nav class="nav" aria-label="Primary navigation">
+          <button
+            class="nav-toggle"
+            aria-controls="primary-navigation"
+            aria-expanded="false"
+            aria-label="Open menu"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
           </button>
           <ul id="primary-navigation" class="nav-list">
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
+            <li><a href="#profile">About Me</a></li>
             <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#work">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <main>
-      <section id="hero" class="hero">
-        <div class="container hero-grid">
-          <div class="hero-content">
-            <h1 class="name">Full Name</h1>
-            <p class="title">Computer Science (Netcentric Computing) Student</p>
-            <p class="lead">Passionate Computer Science student with hands-on experience in web development, mobile applications, database management, networking, and system design. Seeking opportunities to apply technical knowledge and contribute to innovative technology projects.</p>
+    <main id="top">
+      <section id="profile" class="hero">
+        <div class="container hero-layout">
+          <div class="hero-copy">
+            <div class="portrait-frame">
+              <img src="photo_2026-06-14_19-43-16.jpg" alt="Nurhanisa Najwa" />
+            </div>
+            <p class="eyebrow typing-name">NURHANISA NAJWA NORDIN</p>
+            <p class="hero-text">
+              I am a Bachelor of Computer Science (Hons.) Netcentric Computing
+              student with a strong interest in systems analysis, business analysis,
+              software quality assurance, UI/UX design, and Front-end development.
+              I enjoy turning user and business needs into structured system solutions.
+            </p>
+
             <div class="hero-actions">
-              <a class="btn primary" href="resume.pdf" download>Download Resume</a>
-              <a class="btn outline" href="#projects">View Projects</a>
-              <a class="btn ghost" href="#contact">Contact Me</a>
-            </div>
-            <div class="socials" aria-label="Social links">
-              <a href="#" aria-label="GitHub" title="GitHub"><i class="fab fa-github"></i></a>
-              <a href="#" aria-label="LinkedIn" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-              <a href="mailto:email@example.com" aria-label="Email" title="Email"><i class="fas fa-envelope"></i></a>
+              <a class="button button-primary" href="resume.pdf" download>Download resume</a>
             </div>
           </div>
-          <div class="hero-card">
-            <div class="profile-card">
-              <div class="avatar" aria-hidden="true"></div>
-              <div class="card-body">
-                <h3>Currently</h3>
-                <p>Bachelor of Computer Science (Hons.) Netcentric Computing — Universiti Teknologi MARA (UiTM)</p>
-                <p class="muted">Seeking internship opportunities in Software, Web, Mobile, Networking, and IT.</p>
+
+          <aside class="hero-panel" aria-label="Portfolio snapshot">
+            <dl class="quick-facts">
+              <div>
+                <dt>Available for</dt>
+                <dd>Systems Analysis, Business Analysis, QA, UI/UX &amp; Front-End Internships</dd>
               </div>
+              <div>
+                <dt>Location</dt>
+                <dd>Kuala Lumpur, Malaysia</dd>
+              </div>
+            </dl>
+          </aside>
+        </div>
+
+        <div class="container split-layout profile-combined">
+          <div class="section-heading sticky-heading">
+            <p class="eyebrow">About Me</p>
+            <h2>Transforming requirements into practical digital solutions.</h2>
+          </div>
+
+          <div class="profile-stack">
+            <div class="info-grid profile-info-grid">
+              <article>
+                <h3>What I'm Learning</h3>
+                <p>
+                  Currently strengthening my skills in systems analysis, UI/UX design,
+                  Front-end development, and software quality assurance. I am
+                  particularly interested in requirements gathering, system modeling,
+                  user experience design, and developing practical technology solutions
+                  through web, mobile, and IoT-based projects.
+                </p>
+              </article>
+              <article>
+                <h3>Interests</h3>
+                <p>
+                  Systems Analysis, Business Analysis, Software QA, UI/UX Design,
+                  Front-End Development, IT Consulting, and Digital Solutions.
+                </p>
+              </article>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="about" class="section container">
-        <h2>About Me</h2>
-        <div class="about-grid">
-          <div>
-            <p>Professional profile summary: motivated Computer Science undergraduate specialising in Netcentric Computing. Experience building web and mobile solutions, managing databases, and implementing networking concepts. Strong problem-solving skills and a collaborative mindset.</p>
-            <ul class="interests">
-              <li>Software Development</li>
-              <li>Web Development</li>
-              <li>Mobile Applications</li>
-              <li>Networking</li>
-              <li>Database Systems</li>
-              <li>IoT Solutions</li>
-            </ul>
+      <section id="education" class="section section-quiet">
+        <div class="container split-layout">
+          <div class="section-heading sticky-heading">
+            <p class="eyebrow">Education</p>
+            <h2>Academic background in computing and science.</h2>
           </div>
-          <div class="about-stats">
-            <div class="card soft">
-              <h3>Education</h3>
-              <p><strong>Bachelor of Computer Science (Hons.) Netcentric Computing</strong><br>Universiti Teknologi MARA (UiTM), 2023 – Present<br>Current CGPA • Dean's List Award Recipient</p>
+
+          <div class="info-grid education-grid">
+            <article class="education-card">
+              <div class="education-content">
+                <h3>UiTM Jasin, Melaka</h3>
+                <p class="education-program">
+                  Bachelor of Computer Science (Hons.) Netcentric Computing
+                </p>
+                <p class="education-meta">
+                  <strong>Current CGPA:</strong> 3.65
+                </p>
+                <p class="education-duration">2023 - Present</p>
+              </div>
+            </article>
+            <article class="education-card">
+              <div class="education-content">
+                <h3>Kolej Matrikulasi Johor</h3>
+                <p class="education-program">Malaysian Matriculation Programme (Pure Science)</p>
+                <p class="education-meta">
+                  <strong>CGPA:</strong> 3.33
+                </p>
+                <p class="education-duration">2022 - 2023</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section section-dark">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Skills</p>
+            <h2>Skills I use to understand, design, and validate systems.</h2>
+          </div>
+
+          <div class="skill-matrix">
+            <article>
+              <h3>Analysis</h3>
+              <p>Business requirements, use case diagrams, activity diagrams, process flows, system documentation</p>
+            </article>
+            <article>
+              <h3>UI/UX</h3>
+              <p>Wireframes, user flows, interface planning, user requirements, user experience thinking</p>
+            </article>
+            <article>
+              <h3>Quality Assurance</h3>
+              <p>Test planning, defect awareness, requirement validation, documentation review</p>
+            </article>
+            <article>
+              <h3>Development</h3>
+              <p>Front-end development, web development, mobile application development, HTML, CSS, JavaScript, PHP, C++, SQL</p>
+            </article>
+            <article>
+              <h3>Technical Systems</h3>
+              <p>Database management, MySQL, Firebase, IoT solutions, networking fundamentals, Cisco Packet Tracer</p>
+            </article>
+            <article>
+              <h3>Strengths</h3>
+              <p>Analytical thinking, problem solving, system design understanding, communication, teamwork</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="work" class="section section-quiet">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Projects</p>
+            <h2>Academic projects shaped by requirements, users, and system flow.</h2>
+          </div>
+
+          <div class="work-list">
+            <article class="work-item featured-work">
+              <div>
+                <p class="project-kicker">Final Year Project</p>
+                <h3>EvacCare</h3>
+                <p>
+                  A flood management system for evacuees, volunteers, and relief
+                  centre staff. The system helps users locate nearby centres and
+                  predicts supply needs using Multiple Linear Regression while
+                  supporting clearer relief-centre workflows.
+                </p>
+                <a class="project-link" href="#" aria-label="View EvacCare project">View Project</a>
+              </div>
+              <ul class="tag-list">
+                <li>Laravel</li>
+                <li>Flutter</li>
+                <li>MySQL</li>
+                <li>Geolocation</li>
+                <li>MLR</li>
+              </ul>
+            </article>
+
+            <article class="work-item">
+              <div>
+                <p class="project-kicker">IoT Project</p>
+                <h3>WashWatch</h3>
+                <p>
+                  Laundry tracking system using ESP32 and vibration sensors to detect
+                  machine status, update Firebase in real time, and support queue
+                  visibility through QR-based access for a more transparent user
+                  experience.
+                </p>
+                <a class="project-link" href="#" aria-label="View WashWatch project">View Project</a>
+              </div>
+              <ul class="tag-list">
+                <li>ESP32</li>
+                <li>Firebase</li>
+                <li>QR Code</li>
+              </ul>
+            </article>
+
+            <article class="work-item">
+              <div>
+                <p class="project-kicker">Digital Forensics</p>
+                <h3>PySecureTrace</h3>
+                <p>
+                  Python-based forensic analysis tool for automated data collection
+                  and structured reporting during investigation workflows, strengthening
+                  practical understanding of data handling and documentation.
+                </p>
+                <a class="project-link" href="https://github.com/yeosoya/itt593-digital-forensic-tool" aria-label="View PySecureTrace project">View Project</a>
+              </div>
+              <ul class="tag-list">
+                <li>Python</li>
+                <li>HTML</li>
+                <li>Automation</li>
+              </ul>
+            </article>
+
+            <article class="work-item">
+              <div>
+                <p class="project-kicker">Web Development</p>
+                <h3>Maghfirah Travel Website</h3>
+                <p>
+                  Responsive travel agency website prototype focused on clear
+                  navigation, service discovery, user flow, and Front-end interface
+                  structure.
+                </p>
+                <a class="project-link" href="https://github.com/Fahmirusli/Mock-Up-Magfirah-Travel" aria-label="View Maghfirah Travel Website project">View Project</a>
+              </div>
+              <ul class="tag-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Responsive UI</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="section">
+        <div class="container split-layout">
+          <div class="section-heading sticky-heading">
+            <p class="eyebrow">Experience</p>
+            <h2>Work habits shaped through service and student leadership.</h2>
+          </div>
+
+          <div class="timeline">
+            <div class="experience-tabs" role="tablist" aria-label="Experience categories">
+              <button
+                class="experience-tab active"
+                id="work-experience-tab"
+                type="button"
+                role="tab"
+                aria-controls="work-experience-panel"
+                aria-selected="true"
+                data-experience-tab="work-experience-panel"
+              >
+                Work
+              </button>
+              <button
+                class="experience-tab"
+                id="leadership-tab"
+                type="button"
+                role="tab"
+                aria-controls="leadership-panel"
+                aria-selected="false"
+                data-experience-tab="leadership-panel"
+              >
+                Leadership
+              </button>
+              <button
+                class="experience-tab"
+                id="certification-tab"
+                type="button"
+                role="tab"
+                aria-controls="certification-panel"
+                aria-selected="false"
+                data-experience-tab="certification-panel"
+              >
+                Certifications
+              </button>
             </div>
-            <div class="card soft">
-              <h3>Previous</h3>
-              <p>Malaysian Matriculation Programme (Science Stream – Life Science), 2022 – 2023<br>CGPA • MUET Band 4</p>
+
+            <div
+              class="timeline-group"
+              id="work-experience-panel"
+              role="tabpanel"
+              aria-labelledby="work-experience-tab"
+            >
+              <h3 class="timeline-group-title">Work Experience</h3>
+
+              <article class="timeline-item">
+                <span>Work</span>
+                <h3>Front of House Staff</h3>
+                <p>
+                  Processed customer orders, maintained service flow, restocked supplies,
+                  and supported daily opening and closing operations.
+                </p>
+              </article>
+
+              <article class="timeline-item">
+                <span>Work</span>
+                <h3>Cat Caretaker &amp; Shop Assistant</h3>
+                <p>
+                  Managed daily care routines and maintained clean, organised facilities
+                  for customers and animals.
+                </p>
+              </article>
+            </div>
+
+            <div
+              class="timeline-group"
+              id="leadership-panel"
+              role="tabpanel"
+              aria-labelledby="leadership-tab"
+              hidden
+            >
+              <h3 class="timeline-group-title">Leadership</h3>
+
+              <article class="timeline-item">
+                <span>Leadership</span>
+                <h3>Committee Member</h3>
+                <p><strong>Netcentric Club</strong></p>
+                <p>Assisted in planning, organising, and running student activities.</p>
+              </article>
+
+              <article class="timeline-item">
+                <span>Leadership</span>
+                <h3>Committee Member</h3>
+                <p><strong>Suruhanjaya Pilihan Raya Kolej (SPRK)</strong></p>
+                <p>
+                  Assisted in maintaining safety, crowd control, and smooth operations
+                  during election activities.
+                </p>
+              </article>
+
+              <article class="timeline-item">
+                <span>Leadership</span>
+                <h3>Committee Member</h3>
+                <p><strong>Kelab Sahabat Pusat Sumber Zaaba</strong></p>
+                <p>
+                  Assisted in managing library operations during study week and
+                  supporting library closing procedures.
+                </p>
+              </article>
+            </div>
+
+            <div
+              class="timeline-group"
+              id="certification-panel"
+              role="tabpanel"
+              aria-labelledby="certification-tab"
+              hidden
+            >
+              <h3 class="timeline-group-title">Certification</h3>
+
+              <article class="timeline-item">
+                <span>Certification</span>
+                <h3>Cisco Networking Academy</h3>
+                <p>Completed CCNA: Introduction to Networks certificate.</p>
+              </article>
+
+              <article class="timeline-item">
+                <span>Certification</span>
+                <h3>Cisco Networking Academy</h3>
+                <p>Introduction to IoT and Digital Transformation.</p>
+              </article>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="skills" class="section container">
-        <h2>Technical Skills</h2>
-        <div class="skills-grid">
-          <div class="skill-card">
-            <h4>Programming Languages</h4>
-            <div class="badges">
-              <span class="badge">PHP</span>
-              <span class="badge">C++</span>
-              <span class="badge">JavaScript</span>
-              <span class="badge">HTML</span>
-              <span class="badge">CSS</span>
-              <span class="badge">SQL</span>
-            </div>
+      <section id="contact" class="section contact-section">
+        <div class="container split-layout">
+          <div class="section-heading sticky-heading contact-heading">
+            <p class="eyebrow">Contact</p>
+            <h2>Connect with me</h2>
           </div>
-          <div class="skill-card">
-            <h4>Databases</h4>
-            <div class="badges"><span class="badge">MySQL</span><span class="badge">phpMyAdmin</span><span class="badge">SQLyog</span></div>
+
+          <div class="contact-grid" aria-label="Contact links">
+            <a class="contact-card" href="https://github.com/yeosoya" aria-label="Visit GitHub profile">
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <path
+                  d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-1.05-.01-1.9-2.78.62-3.37-1.22-3.37-1.22-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.36 1.12 2.93.86.09-.67.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.08 0-1.12.39-2.04 1.03-2.76-.1-.26-.45-1.31.1-2.72 0 0 .84-.28 2.75 1.05A9.3 9.3 0 0 1 12 6.94c.85 0 1.71.12 2.51.34 1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.46.1 2.72.64.72 1.03 1.64 1.03 2.76 0 3.95-2.34 4.82-4.57 5.08.36.32.68.94.68 1.9 0 1.38-.01 2.49-.01 2.83 0 .27.18.59.69.49A10.2 10.2 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"
+                />
+              </svg>
+              <span>GitHub</span>
+            </a>
+
+            <a class="contact-card" href="https://www.linkedin.com/in/nurhanisa-najwa-5937a9339" aria-label="Visit LinkedIn profile">
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <path
+                  d="M6.94 8.98H3.92v9.74h3.02V8.98ZM5.43 4.14a1.75 1.75 0 1 0 0 3.5 1.75 1.75 0 0 0 0-3.5Zm13.65 9.2c0-2.93-1.56-4.29-3.64-4.29-1.68 0-2.43.92-2.85 1.57V8.98H9.7v9.74h3.01v-4.82c0-1.27.24-2.5 1.82-2.5 1.55 0 1.57 1.45 1.57 2.58v4.74h3.01v-5.38h-.03Z"
+                />
+              </svg>
+              <span>LinkedIn</span>
+            </a>
+
+            <a class="contact-card" href="mailto:hanisanajwa27@gmail.com" aria-label="Send email">
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <path
+                  d="M4.5 5h15A2.5 2.5 0 0 1 22 7.5v9A2.5 2.5 0 0 1 19.5 19h-15A2.5 2.5 0 0 1 2 16.5v-9A2.5 2.5 0 0 1 4.5 5Zm0 2a.5.5 0 0 0-.5.5v.38l8 4.75 8-4.75V7.5a.5.5 0 0 0-.5-.5h-15Zm15 10a.5.5 0 0 0 .5-.5v-6.3l-7.49 4.44a1 1 0 0 1-1.02 0L4 10.2v6.3a.5.5 0 0 0 .5.5h15Z"
+                />
+              </svg>
+              <span>Email</span>
+            </a>
+
           </div>
-          <div class="skill-card">
-            <h4>Networking & Security</h4>
-            <div class="badges"><span class="badge">TCP/IP</span><span class="badge">IPv4/IPv6</span><span class="badge">Subnetting</span><span class="badge">Cisco Packet Tracer</span><span class="badge">Wireshark</span></div>
-          </div>
-          <div class="skill-card">
-            <h4>Frameworks & Tools</h4>
-            <div class="badges"><span class="badge">Laravel</span><span class="badge">Flutter</span><span class="badge">Firebase</span><span class="badge">Git</span><span class="badge">VS Code</span></div>
-          </div>
-        </div>
-      </section>
-
-      <section id="projects" class="section container">
-        <h2>Featured Projects</h2>
-        <div class="projects-grid">
-          <article class="project-card">
-            <h3>EvacCare</h3>
-            <p class="category">Final Year Project</p>
-            <p class="tech">Laravel · Flutter · MySQL · Geolocation · MLR</p>
-            <p>Developed a flood management system supporting evacuees, volunteers, and relief centre staff. Implemented geolocation to find nearby centres and integrated Multiple Linear Regression to predict supply requirements.</p>
-            <a class="btn small" href="#" aria-label="EvacCare GitHub">View on GitHub</a>
-          </article>
-
-          <article class="project-card">
-            <h3>WashWatch</h3>
-            <p class="category">IoT Project</p>
-            <p class="tech">ESP32 · Vibration Sensor · Firebase · QR Code</p>
-            <p>Used ESP32 and vibration sensors to detect laundry cycles, updating statuses in real time with notifications and queue tracking.</p>
-            <a class="btn small" href="#" aria-label="WashWatch GitHub">View on GitHub</a>
-          </article>
-
-          <article class="project-card">
-            <h3>PySecureTrace</h3>
-            <p class="category">Digital Forensic Project</p>
-            <p class="tech">Python · HTML</p>
-            <p>Built a forensic analysis tool for automated data collection and analysis to support investigations.</p>
-            <a class="btn small" href="#" aria-label="PySecureTrace GitHub">View on GitHub</a>
-          </article>
-
-          <article class="project-card">
-            <h3>Maghfirah Travel Website</h3>
-            <p class="category">Web Development</p>
-            <p class="tech">HTML · CSS</p>
-            <p>Responsive website prototype for a travel agency focused on intuitive navigation and UX.</p>
-            <a class="btn small" href="#" aria-label="Maghfirah GitHub">View on GitHub</a>
-          </article>
-        </div>
-      </section>
-
-      <section id="experience" class="section container">
-        <h2>Work Experience</h2>
-        <div class="cards-grid">
-          <div class="card soft">
-            <h3>Front of House (FOH) Staff</h3>
-            <ul>
-              <li>Took and processed customer orders ensuring accuracy and satisfaction.</li>
-              <li>Restocked supplies and assisted with opening and closing duties.</li>
-            </ul>
-          </div>
-          <div class="card soft">
-            <h3>Cat Caretaker & Shop Assistant</h3>
-            <ul>
-              <li>Provided daily care for cats and maintained cleanliness of facilities.</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section id="leadership" class="section container">
-        <h2>Leadership & Extracurricular</h2>
-        <div class="cards-grid">
-          <div class="card soft"><h3>Netcentric Club — Committee Member</h3><p>Assisted planning and organizing club activities.</p></div>
-          <div class="card soft"><h3>SPRK — Committee Member (Safety Team)</h3><p>Helped maintain safety and crowd control during election activities.</p></div>
-          <div class="card soft"><h3>Kelab Sahabat Pusat Sumber Zaaba — Committee Member</h3><p>Supported library operations during study week.</p></div>
-        </div>
-      </section>
-
-      <section id="certifications" class="section container">
-        <h2>Certifications</h2>
-        <div class="cards-grid">
-          <div class="card soft"><h3>Cisco Networking Academy</h3><p>CCNA: Introduction to Networks · Cisco Networking Academy Certificate</p></div>
-        </div>
-      </section>
-
-      <section id="contact" class="section container contact-section">
-        <h2>Contact</h2>
-        <div class="contact-grid">
-          <div class="card soft contact-card">
-            <h3>Get in touch</h3>
-            <p><strong>Email:</strong> <a href="mailto:email@example.com">email@example.com</a></p>
-            <p><strong>Phone:</strong> +60 12-345 6789</p>
-            <p><strong>LinkedIn:</strong> <a href="#">linkedin.com/in/yourprofile</a></p>
-            <p><strong>GitHub:</strong> <a href="#">github.com/yourusername</a></p>
-            <a class="btn primary" href="resume.pdf" download>Download Portfolio</a>
-          </div>
-          <form class="card soft contact-form" action="#" onsubmit="handleSubmit(event)">
-            <label for="name">Name</label>
-            <input id="name" name="name" required />
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email" required />
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-            <button class="btn primary" type="submit">Send Message</button>
-          </form>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
       <div class="container footer-inner">
-        <p>© 2026 Full Name. All rights reserved.</p>
-        <div class="footer-links">
-          <a href="#">GitHub</a>
-          <a href="#">LinkedIn</a>
-        </div>
+        <p>&copy; 2026 Nurhanisa Najwa.</p>
+        <a class="back-to-top" href="#top" aria-label="Back to top">
+          <svg aria-hidden="true" viewBox="0 0 24 24">
+            <path d="M12 5.5 5.5 12l1.42 1.42L11 9.34V19h2V9.34l4.08 4.08L18.5 12 12 5.5Z" />
+          </svg>
+        </a>
       </div>
     </footer>
   </body>
