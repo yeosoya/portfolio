@@ -54,7 +54,7 @@
       <section id="profile" class="hero">
         <div class="container hero-layout">
           <div class="hero-copy">
-            <div class="portrait-frame">
+            <div class="portrait-frame" aria-label="Portrait placeholder">
               <img src="photo_2026-06-14_19-43-16.jpg" alt="Nurhanisa Najwa" />
             </div>
             <p class="eyebrow typing-name">NURHANISA NAJWA NORDIN</p>
@@ -152,35 +152,27 @@
         <div class="container">
           <div class="section-heading">
             <p class="eyebrow">Skills</p>
-            <h2>Skills I use to understand, design, and validate systems.</h2>
+            <h2>Technologies and tools I work with.</h2>
           </div>
 
-          <div class="skill-matrix">
-            <article>
-              <h3>Analysis</h3>
-              <p>Business requirements, use case diagrams, activity diagrams, process flows, system documentation</p>
-            </article>
-            <article>
-              <h3>UI/UX</h3>
-              <p>Wireframes, user flows, interface planning, user requirements, user experience thinking</p>
-            </article>
-            <article>
-              <h3>Quality Assurance</h3>
-              <p>Test planning, defect awareness, requirement validation, documentation review</p>
-            </article>
-            <article>
-              <h3>Development</h3>
-              <p>Front-end development, web development, mobile application development, HTML, CSS, JavaScript, PHP, C++, SQL</p>
-            </article>
-            <article>
-              <h3>Technical Systems</h3>
-              <p>Database management, MySQL, Firebase, IoT solutions, networking fundamentals, Cisco Packet Tracer</p>
-            </article>
-            <article>
-              <h3>Strengths</h3>
-              <p>Analytical thinking, problem solving, system design understanding, communication, teamwork</p>
-            </article>
-          </div>
+          <ul class="skill-list" aria-label="Technical skills">
+            <li>PHP</li>
+            <li>C++</li>
+            <li>JavaScript</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>SQL</li>
+            <li>Dart</li>
+            <li>MySQL</li>
+            <li>phpMyAdmin</li>
+            <li>SQLyog</li>
+            <li>Microsoft Excel (Intermediate)</li>
+            <li>Cisco Packet Tracer</li>
+            <li>Wireshark</li>
+            <li>Laravel</li>
+            <li>Flutter</li>
+            <li>Firebase</li>
+          </ul>
         </div>
       </section>
 
@@ -223,7 +215,15 @@
                   visibility through QR-based access for a more transparent user
                   experience.
                 </p>
-                <a class="project-link" href="#" aria-label="View WashWatch project">View Project</a>
+                <a
+                  class="project-link"
+                  href="https://github.com/yeosoya/WashWatch"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="View WashWatch project on GitHub"
+                >
+                  View Project
+                </a>
               </div>
               <ul class="tag-list">
                 <li>ESP32</li>
@@ -247,6 +247,31 @@
                 <li>Python</li>
                 <li>HTML</li>
                 <li>Automation</li>
+              </ul>
+            </article>
+
+            <article class="work-item">
+              <div>
+                <p class="project-kicker">Android Application</p>
+                <h3>Vehicle Loan Calculator</h3>
+                <p>
+                  Android application that calculates estimated vehicle loan payments
+                  through a structured mobile interface built with Java and XML layouts.
+                </p>
+                <a
+                  class="project-link"
+                  href="https://github.com/yeosoya/vehicle-loan-repository"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="View Vehicle Loan Calculator project on GitHub"
+                >
+                  View Project
+                </a>
+              </div>
+              <ul class="tag-list">
+                <li>Java</li>
+                <li>Android</li>
+                <li>XML</li>
               </ul>
             </article>
 
@@ -324,20 +349,20 @@
               <h3 class="timeline-group-title">Work Experience</h3>
 
               <article class="timeline-item">
-                <span>Work</span>
-                <h3>Front of House Staff</h3>
-                <p>
-                  Processed customer orders, maintained service flow, restocked supplies,
-                  and supported daily opening and closing operations.
-                </p>
-              </article>
-
-              <article class="timeline-item">
-                <span>Work</span>
+                <span>Belyy Cat Hotel</span>
                 <h3>Cat Caretaker &amp; Shop Assistant</h3>
                 <p>
                   Managed daily care routines and maintained clean, organised facilities
                   for customers and animals.
+                </p>
+              </article>
+
+              <article class="timeline-item">
+                <span>KFC</span>
+                <h3>Front of House Staff</h3>
+                <p>
+                  Processed customer orders, maintained service flow, restocked supplies,
+                  and supported daily opening and closing operations.
                 </p>
               </article>
             </div>
@@ -352,16 +377,14 @@
               <h3 class="timeline-group-title">Leadership</h3>
 
               <article class="timeline-item">
-                <span>Leadership</span>
+                <span>Netcentric Club</span>
                 <h3>Committee Member</h3>
-                <p><strong>Netcentric Club</strong></p>
                 <p>Assisted in planning, organising, and running student activities.</p>
               </article>
 
               <article class="timeline-item">
-                <span>Leadership</span>
+                <span>Suruhanjaya Pilihan Raya Kolej (SPRK)</span>
                 <h3>Committee Member</h3>
-                <p><strong>Suruhanjaya Pilihan Raya Kolej (SPRK)</strong></p>
                 <p>
                   Assisted in maintaining safety, crowd control, and smooth operations
                   during election activities.
@@ -369,9 +392,8 @@
               </article>
 
               <article class="timeline-item">
-                <span>Leadership</span>
+                <span>Kelab Sahabat Pusat Sumber Zaaba</span>
                 <h3>Committee Member</h3>
-                <p><strong>Kelab Sahabat Pusat Sumber Zaaba</strong></p>
                 <p>
                   Assisted in managing library operations during study week and
                   supporting library closing procedures.
@@ -389,15 +411,21 @@
               <h3 class="timeline-group-title">Certification</h3>
 
               <article class="timeline-item">
-                <span>Certification</span>
-                <h3>Cisco Networking Academy</h3>
-                <p>Completed CCNA: Introduction to Networks certificate.</p>
+                <span>Cisco Networking Academy</span>
+                <h3>CCNA: Introduction to Networks</h3>
+                <p>2025</p>
               </article>
 
               <article class="timeline-item">
-                <span>Certification</span>
-                <h3>Cisco Networking Academy</h3>
-                <p>Introduction to IoT and Digital Transformation.</p>
+                <span>Cisco Networking Academy</span>
+                <h3>Introduction to IoT and Digital Transformation</h3>
+                <p>2025</p>
+              </article>
+
+              <article class="timeline-item">
+                <span>Malaysian University English Test</span>
+                <h3>MUET, Band 4.5</h3>
+                <p>2023</p>
               </article>
             </div>
           </div>
